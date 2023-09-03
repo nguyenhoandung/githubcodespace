@@ -41,7 +41,9 @@ Chỉ hoạt động trên những file hệ điều hành có đuôi .GZ
 
 # Bản cập nhật sau
 Sẽ update thêm chức năng chọn vùng kết nối RDP trên Ngrok
+
 Thêm chức năng có thể cài file .iso .img
+
 Sửa lại giao diện thêm trực quan.
 
 
