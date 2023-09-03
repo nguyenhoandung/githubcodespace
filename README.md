@@ -41,5 +41,5 @@ Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ 
 -drive file=filegz.img,format=raw,if=virtio \
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
--vnc :0 -vga virtio```
+-vnc :0 -vga virtio
 
