@@ -17,9 +17,21 @@ chmod +x cline2.sh
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok -y
 ngrok config add-authtoken [token]
 ### Bước 2: Tạo cổng rdp/vnc
-ngrok tcp 3389
+ngrok tcp 3389 /
 ngrok tcp 5900
-### Bước 3: Tạo trang mới và copy lệnh này
+### Bước 3: Tạo trang mới và copy lệnh này dán vào
+qemu-system-x86_64 \
+-net nic -net user,hostfwd=tcp::3389-:3389 \
+-m 12G -smp cores=4 \
+-cpu max \
+-enable-kvm \
+-boot order=d \
+-drive file=filegz.img,format=raw,if=virtio \
+-device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
+-device usb-tablet \
+-vnc :0 -vga virtio
+# Lưu ý
+Khi khởi động lại, một số chức năng trong hệ thống có thể hoạt động không bình thường.
 
 
 
