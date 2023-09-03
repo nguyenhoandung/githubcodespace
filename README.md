@@ -1,17 +1,17 @@
-# RDP trên Github Codespace
+# •RDP trên Github Codespace
 Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ yếu để trải nghiệm Windows không được tự ý sử dụng đem ra đào coin, treo tool. Nếu có dấu hiệu lạm dụng trong thời gian dài, trực tiếp ban khỏi Github.
-# Lưu ý
+# •Lưu ý
 Khi khởi động lại, một số chức năng trong hệ thống có thể hoạt động không bình thường.
 
 Chỉ hoạt động trên những file hệ điều hành có đuôi .GZ
 
-# Bản cập nhật sau
+# •Bản cập nhật sau
 Sẽ update thêm chức năng chọn vùng kết nối RDP trên Ngrok
 
 Thêm chức năng có thể cài file .iso .img
 
 Sửa lại giao diện thêm trực quan.
-# Cách cài đặt
+# •Cách cài đặt
 ```sudo su```
 
 ```wget -O cline1.sh https://raw.githubusercontent.com/VinDaiDe/githubcodespace/main/cline1.sh```
@@ -21,7 +21,7 @@ Sửa lại giao diện thêm trực quan.
 
 
 ```./cline1.sh```
-## Tạo trang mới
+### Tạo trang mới
 ```sudo su```
 
 ```qemu-img resize filegz.img 1025G```
@@ -35,7 +35,7 @@ Sửa lại giao diện thêm trực quan.
 
 
 ```./cline2.sh```
-# Cách để khởi động lại khi Vps dừng hoạt động
+# •Cách để khởi động lại khi Vps dừng hoạt động
 ### Bước 1: Dán lệnh này vào và thay [token] bằng token của bạn
 ```curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok -y```
 
@@ -53,7 +53,7 @@ Sửa lại giao diện thêm trực quan.
 
 
 ```./cline2.sh```
-### Nếu lỗi có thể dùng
+### *Nếu lỗi có thể dùng
 ```sudo su```
 
 
