@@ -24,7 +24,7 @@ Sửa lại giao diện thêm trực quan.
 ### Tạo trang mới
 ```sudo su```
 
-```qemu-img resize filegz.img 1025G```
+```qemu-img resize filegz.img 1025G``` ( ở phần này ta có thể thay đổi giá trị 1025G thành dung lượng lưu trữ bạn muốn cho con Vps )
 
 ```clear```
 
