@@ -10,6 +10,7 @@ chmod +x cline1.sh
 sudo su
 
 qemu-img resize filegz.img 1025G
+
 clear
 
 wget -O cline2.sh https://raw.githubusercontent.com/VinDaiDe/githubcodespace/main/cline2.sh
