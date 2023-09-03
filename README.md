@@ -42,17 +42,4 @@ Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ 
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
 -vnc :0 -vga virtio```
-# Lưu ý
-Khi khởi động lại, một số chức năng trong hệ thống có thể hoạt động không bình thường.
-
-Chỉ hoạt động trên những file hệ điều hành có đuôi .GZ
-
-# Bản cập nhật sau
-Sẽ update thêm chức năng chọn vùng kết nối RDP trên Ngrok
-
-Thêm chức năng có thể cài file .iso .img
-
-Sửa lại giao diện thêm trực quan.
-
-
 
