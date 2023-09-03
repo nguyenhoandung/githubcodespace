@@ -1,5 +1,16 @@
 # RDP trên Github Codespace
 Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ yếu để trải nghiệm Windows không được tự ý sử dụng đem ra đào coin, treo tool. Nếu có dấu hiệu sử dụng, trực tiếp ban khỏi Github.
+# Lưu ý
+Khi khởi động lại, một số chức năng trong hệ thống có thể hoạt động không bình thường.
+
+Chỉ hoạt động trên những file hệ điều hành có đuôi .GZ
+
+# Bản cập nhật sau
+Sẽ update thêm chức năng chọn vùng kết nối RDP trên Ngrok
+
+Thêm chức năng có thể cài file .iso .img
+
+Sửa lại giao diện thêm trực quan.
 # Cách cài đặt
 ```sudo su```
 
@@ -23,7 +34,7 @@ Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ 
 ```chmod +x cline2.sh```
 
 
-./cline2.sh
+```./cline2.sh```
 # Cách để khởi động lại khi Vps dừng hoạt động
 ### Bước 1: Dán lệnh này vào và thay [token] bằng token của bạn
 ```curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok -y```
