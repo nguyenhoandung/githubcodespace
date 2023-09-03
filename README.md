@@ -5,6 +5,8 @@ Khi khởi động lại, một số chức năng trong hệ thống có thể h
 
 Chỉ hoạt động trên những file hệ điều hành có đuôi .GZ
 
+Nhấn Shutdown trên Vps này sẽ không thể khởi động lại được
+
 # •Bản cập nhật sau
 Sẽ update thêm chức năng chọn vùng kết nối RDP trên Ngrok
 
@@ -35,7 +37,7 @@ Sửa lại giao diện thêm trực quan.
 
 
 ```./cline2.sh```
-# •Cách để khởi động lại khi Vps dừng hoạt động
+# •Cách để khởi động lại Vps khi Codespace đột ngột dừng hoạt động
 ### Bước 1: Dán lệnh này vào và thay [token] bằng token của bạn
 ```sudo su```
 
