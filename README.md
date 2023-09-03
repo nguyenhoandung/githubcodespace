@@ -38,6 +38,7 @@ Sửa lại giao diện thêm trực quan.
 # Cách để khởi động lại khi Vps dừng hoạt động
 ### Bước 1: Dán lệnh này vào và thay [token] bằng token của bạn
 ```curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok -y```
+
 ```ngrok config add-authtoken [token]```
 ### Bước 2: Tạo cổng rdp/vnc
 ```ngrok tcp 3389``` /
