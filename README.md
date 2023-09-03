@@ -44,6 +44,8 @@ Sửa lại giao diện thêm trực quan.
 ```ngrok tcp 3389``` /
 ```ngrok tcp 5900```
 ### Bước 3: Tạo trang mới và copy lệnh này rồi dán vào
+```sudo su``` 
+
 ```wget -O cline2.sh https://raw.githubusercontent.com/VinDaiDe/githubcodespace/main/cline2.sh```
 
 
@@ -52,6 +54,9 @@ Sửa lại giao diện thêm trực quan.
 
 ```./cline2.sh```
 ### Nếu lỗi có thể dùng
+```sudo su```
+
+
 qemu-system-x86_64 \
 -net nic -net user,hostfwd=tcp::3389-:3389 \
 -m 12G -smp cores=4 \
