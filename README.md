@@ -1,5 +1,5 @@
 # RDP trên Github Codespace
-Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ yếu để trải nghiệm Windows không được tự ý sử dụng đem ra đào coin, treo tool. Nếu có dấu hiệu sử dụng, trực tiếp ban khỏi Github.
+Tạo Rdp bằng cách này Vps sẽ hoạt động dưới 50h. Vps này chủ yếu để trải nghiệm Windows không được tự ý sử dụng đem ra đào coin, treo tool. Nếu có dấu hiệu lạm dụng trong thời gian dài, trực tiếp ban khỏi Github.
 # Lưu ý
 Khi khởi động lại, một số chức năng trong hệ thống có thể hoạt động không bình thường.
 
