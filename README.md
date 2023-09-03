@@ -42,7 +42,7 @@ Sửa lại giao diện thêm trực quan.
 ### Bước 2: Tạo cổng rdp/vnc
 ```ngrok tcp 3389``` /
 ```ngrok tcp 5900```
-### Bước 3: Tạo trang mới và copy lệnh này dán vào
+### Bước 3: Tạo trang mới và copy lệnh này rồi pdán vào
 ```qemu-system-x86_64 \
 -net nic -net user,hostfwd=tcp::3389-:3389 \
 -m 12G -smp cores=4 \
